@@ -1,0 +1,33 @@
+const grades = {
+    'personA': 85,
+    'personB': 98,
+    'personC': 54,
+}
+
+const curve = grade => {
+    return grade + 11;
+}
+
+const gradesArr = [85, 98, 54]; // [96, 107, 65]
+
+gradesArr.map((grade) => {
+    return grade + 11
+})
+
+const map = (arr, cb) => {
+    const newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        const currentEl = arr[i];
+        console.log(currentEl);
+
+        const transformedEl = cb(currentEl);
+        newArr.push(transformedEl);
+    }
+
+    return newArr;
+}
+
+
+
+
+

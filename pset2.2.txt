@@ -1,0 +1,43 @@
+{
+    'a': 1,
+    'b': true,
+}
+
+=> add 5 to each property value IF number
+
+// how to examine each key on object?
+get object.keys and then for loop through keys
+
+// how to add b to currentVal
+first, check to see if currentVal is a number
+
+IF NUMBER: currentVal + b 
+
+IF NOT NUMBER: skip
+
+a = {
+    'a': 1,
+    'b': true,
+}
+b = 5
+keys = ['a', 'b']
+i   | currentKey    | currentVal    | a[currentKey]
+---------------------------------------------------
+0   | keys[0] = a   | a['a'] = 1    | 1 + b = 6
+1   | keys[1] = b   | a['b'] = true | true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
